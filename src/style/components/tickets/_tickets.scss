@@ -1,0 +1,12 @@
+.tickets-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .tickets-list-wrap {
+        display: flex;
+        flex-grow: 1;
+    }
+}
+@import "heder";
+@import "tickets-list";
+@import "filters";

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Action menu</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/be683bb622.js" crossorigin="anonymous"></script>
+  <!-- Fonts ends -->
+
+</head>
+
+<body>
+  <!-- header starts  -->
+  <header>
+    <!-- logo starts -->
+    <div class="logo-wrap">
+    </div>
+    <!-- logo ends -->
+
+    <div class="page-head">
+      <!-- page-title block starts -->
+      <div class="page-title">
+        <i class="fas fa-ticket-alt page-title__icon"></i>
+        <span class="page-title__seporator ">/</span>
+        <h1 class="page-title__text">Tickets</h1>
+      </div>
+      <!-- page-title block ends -->
+
+      <div class="page-head-right">
+        <!-- dropdow block starts -->
+        <div class="dropdown">
+          <div class="dropdown__view">
+            <span class="dropdown__text-selected">Create new</span>
+            <i class="fas fa-chevron-down dropdown__arrow"></i>
+          </div>
+
+          <ul class="dropdown__items">
+            <li class="dropdown__item">Create new</li>
+          </ul>
+        </div>
+        <!-- dropdow block ends -->
+
+        <!-- notification strats -->
+        <div class="notification">
+          <i class="far fa-bell notification__icon"></i>
+          <span class="notification__status notification__status--active"></span>
+        </div>
+        <!-- notification ends -->
+
+        <span class="seperator"></span>
+
+        <!-- dropdown block starts | dropdown type = user -->
+        <div class="dropdown dropdown--type-dark">
+          <div class="dropdown__view">
+
+            <!-- dropdown-user block starts -->
+            <div class="dropdown-user">
+              <img src="/static/images/user.png" alt="" class="dropdown-user__image">
+              <span class="dropdown-user--status dropdown-user--status-online"></span>
+            </div>
+            <!-- dropdown-user block ends -->
+
+            <span class="dropdown__text-selected">Marcus Stanley</span>
+            <i class="fas fa-chevron-down dropdown__arrow"></i>
+
+          </div>
+
+          <ul class="dropdown__items">
+            <li class="dropdown__item">Edit profile</li>
+          </ul>
+
+        </div>
+        <!-- dropdown block ends -->
+      </div>
+
+    </div>
+
+  </header>
+  <!-- header ends  -->
+
+  <!-- main section starts -->
+  <section class="main">
+
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <ul class="side-nav">
+        <!-- nav-item block starts -->
+        <li class="nav-item">
+          <a href="#" class="nav-item__link ">
+            <i class="fas fa-tachometer-alt nav-item__icon"></i>
+            <div class="nav-item__text">Dashboard</div>
+          </a>
+        </li>
+        <!-- nav-item block ends -->
+
+        <!-- nav-item block starts -->
+        <li class="nav-item">
+          <a href="#" class="nav-item__link nav-item__link-active">
+            <i class="fas fa-ticket-alt nav-item__icon"></i>
+            <div class="nav-item__text">Tickets</div>
+          </a>
+        </li>
+        <!-- nav-item block ends -->
+
+        <!-- nav-item block starts -->
+        <li class="nav-item">
+          <a href="#" class="nav-item__link">
+            <i class="fas fa-tachometer-alt nav-item__icon"></i>
+            <div class="nav-item__text">Calendar</div>
+          </a>
+        </li>
+        <!-- nav-item block ends -->
+
+        <!-- nav-item block starts -->
+        <li class="nav-item">
+          <a href="#" class="nav-item__link">
+            <i class="fas fa-tachometer-alt nav-item__icon"></i>
+            <div class="nav-item__text">Contacts</div>
+          </a>
+        </li>
+        <!-- nav-item block ends -->
+
+        <!-- nav-item block starts -->
+        <li class="nav-item">
+          <a href="#" class="nav-item__link">
+            <i class="fas fa-tachometer-alt nav-item__icon"></i>
+            <div class="nav-item__text">Companies</div>
+          </a>
+        </li>
+        <!-- nav-item block ends -->
+
+        <!-- nav-item block starts -->
+        <li class="nav-item">
+          <a href="#" class="nav-item__link">
+            <i class="fas fa-tachometer-alt nav-item__icon"></i>
+            <div class="nav-item__text">Social</div>
+          </a>
+        </li>
+        <!-- nav-item block ends -->
+
+        <!-- nav-item block starts -->
+        <li class="nav-item">
+          <a href="#" class="nav-item__link">
+            <i class="fas fa-tachometer-alt nav-item__icon"></i>
+            <div class="nav-item__text">Knowledge base</div>
+          </a>
+        </li>
+        <!-- nav-item block ends -->
+
+        <!-- nav-item block starts -->
+        <li class="nav-item">
+          <a href="#" class="nav-item__link">
+            <i class="fas fa-tachometer-alt nav-item__icon"></i>
+            <div class="nav-item__text">Reports</div>
+          </a>
+        </li>
+        <!-- nav-item block ends -->
+
+        <!-- nav-item block starts -->
+        <li class="nav-item">
+          <a href="#" class="nav-item__link">
+            <i class="fas fa-tachometer-alt nav-item__icon"></i>
+            <div class="nav-item__text">Admin</div>
+          </a>
+        </li>
+        <!-- nav-item block ends -->
+      </ul>
+    </div>
+    <!-- sidebar ends -->
+
+    <!-- content starts -->
+    <div class="content">
+
+      <!-- tickets section starts -->
+      <div class="tickets-wrap">
+
+        <!-- tickets header block starts -->
+        <div class="tickets-header">
+          <div class="tickets-header-left">
+
+            <!-- checkbox block starts -->
+            <div class="checkbox-wrap">
+              <input class="checkbox" id="checkbox" type="checkbox" value="">
+              <label for="checkbox"></label>
+            </div>
+            <!-- checkbox block ends -->
+
+            <!-- radio group block starts -->
+            <div class="radio-group">
+              <!-- radio block starts -->
+              <input type="radio" id="take" name="action">
+              <label for="take" class="radio">
+                <i class="fas fa-user-plus radio__icon"></i>
+                <span class="radio__text">Take</span>
+              </label>
+              <!-- radio block ends -->
+
+              <!-- radio block starts -->
+              <input type="radio" id="delete" name="action">
+              <label for="delete" class="radio">
+                <i class="fas fa-trash-alt radio__icon"></i>
+                <span class="radio__text">Delete</span>
+              </label>
+              <!-- radio block ends -->
+
+              <!-- radio block starts -->
+              <input type="radio" id="spam" name="action">
+              <label for="spam" class="radio">
+                <i class="fas fa-ban radio__icon"></i>
+                <span class="radio__text">Spam</span>
+              </label>
+              <!-- radio block ends -->
+            </div>
+            <!-- radio group block ends-->
+
+            <!-- radio group block starts -->
+            <div class="radio-group">
+              <!-- radio block starts -->
+              <input type="radio" id="bulk" name="action">
+              <label for="bulk" class="radio">
+                <i class="fas fa-user-plus radio__icon"></i>
+                <span class="radio__text">Bulk Update</span>
+              </label>
+              <!-- radio block ends -->
+
+              <!-- radio block starts -->
+              <input type="radio" id="macro" name="action">
+              <label for="macro" class="radio">
+                <i class="fas fa-trash-alt radio__icon"></i>
+                <span class="radio__text">Macros</span>
+              </label>
+              <!-- radio block ends -->
+
+            </div>
+            <!-- radio group block ends-->
+
+            <!-- radio group block starts -->
+            <div class="radio-group">
+              <!-- radio block starts -->
+              <input type="radio" id="merge" name="action">
+              <label for="merge" class="radio">
+                <i class="fas fa-user-plus radio__icon"></i>
+                <span class="radio__text">Merge</span>
+              </label>
+              <!-- radio block ends -->
+
+              <!-- radio block starts -->
+              <input type="radio" id="link" name="action">
+              <label for="link" class="radio">
+                <i class="fas fa-trash-alt radio__icon"></i>
+                <span class="radio__text">Link</span>
+              </label>
+              <!-- radio block ends -->
+
+            </div>
+            <!-- radio group block ends-->
+
+          </div>
+          <div class="tickets-header-right">
+
+            <!-- dropdow block starts -->
+            <div class="dropdown dropdown--type-box dropdown--size-large">
+              <div class="dropdown__view">
+                <i class="fas fa-list-alt dropdown__icon"></i>
+                <span class="dropdown__text-selected">Card</span>
+                <i class="fas fa-chevron-down dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__items">
+                <li class="dropdown__item">Card</li>
+              </ul>
+            </div>
+            <!-- dropdow block ends -->
+
+          </div>
+        </div>
+        <!-- tickets header block ends -->
+
+        <!-- tickets list wrapper block starts -->
+        <div class="tickets-list-wrap">
+          <div class="tickets-list">
+
+            <!-- ticket block starts -->
+            <div class="ticket">
+
+              <!-- checkbox block starts -->
+              <div class="checkbox-wrap">
+                <input class="checkbox" id="checkbox-1" type="checkbox" value="">
+                <label for="checkbox-1"></label>
+              </div>
+              <!-- checkbox block ends -->
+
+              <div class="ticket__user-icon">
+                M
+              </div>
+
+              <!-- ticket-texts block starts -->
+              <div class="ticket-texts">
+
+                <!-- ticket-texts-top block starts -->
+                <div class="ticket-texts-top">
+
+                  <!-- ticket-texts-top-left block starts -->
+                  <div class="ticket-texts-top-left">
+                    <h2 class="ticket__text--size-big">
+                      <div class="ticket__text--color-light">#1035 - &nbsp;</div>
+                      <div class="ticket__text--color-dark"> PayPal Integration Problem</div>
+                    </h2>
+
+                    <div class="ticket__text--size-default">
+                      <ul class="ticket-info">
+                        <li><i class="far fa-envelope ticket-info__icon"></i> <span class="ticket-user">Marcus
+                            Stanley</span>
+                        </li>
+                        <li>Agent responded 4 hours ago</li>
+                        <li>Due in 16 hours</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- ticket-texts-top-left block ends -->
+
+                  <!-- ticket-texts-top-right block starts -->
+                  <div class="ticket-texts-top-right">
+                    <button class="button button-blue">Customer Responded</button>
+                    <button class="button button-red">Overdue</button>
+                  </div>
+                  <!-- ticket-texts-top-right block endss -->
+
+                </div>
+                <!-- ticket-texts-top block ends -->
+
+
+                <!-- ticket-texts-bottom block starts -->
+                <div class="ticket-texts-bottom">
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="far fa-circle dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Low</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Open</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">-- / mark Rodgers</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <button class="button button-default">Shipping address</button>
+
+                </div>
+                <!-- ticket-texts-bottom block ends -->
+
+              </div>
+              <!-- ticket-texts block ends -->
+
+
+            </div>
+            <!-- ticket block ends -->
+
+            <!-- ticket block starts -->
+            <div class="ticket">
+
+              <!-- checkbox block starts -->
+              <div class="checkbox-wrap">
+                <input class="checkbox" id="checkbox-2" type="checkbox" value="">
+                <label for="checkbox-2"></label>
+              </div>
+              <!-- checkbox block ends -->
+
+              <div class="ticket__user-icon">
+                M
+              </div>
+
+              <!-- ticket-texts block starts -->
+              <div class="ticket-texts">
+
+                <!-- ticket-texts-top block starts -->
+                <div class="ticket-texts-top">
+
+                  <!-- ticket-texts-top-left block starts -->
+                  <div class="ticket-texts-top-left">
+                    <h2 class="ticket__text--size-big">
+                      <div class="ticket__text--color-light">#1035 - &nbsp;</div>
+                      <div class="ticket__text--color-dark"> PayPal Integration Problem</div>
+                    </h2>
+
+                    <div class="ticket__text--size-default">
+                      <ul class="ticket-info">
+                        <li><i class="far fa-envelope ticket-info__icon"></i> <span class="ticket-user">Marcus
+                            Stanley</span>
+                        </li>
+                        <li>Agent responded 4 hours ago</li>
+                        <li>Due in 16 hours</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- ticket-texts-top-left block ends -->
+
+                  <!-- ticket-texts-top-right block starts -->
+                  <div class="ticket-texts-top-right">
+                    <button class="button button-red">Overdue</button>
+                  </div>
+                  <!-- ticket-texts-top-right block endss -->
+
+                </div>
+                <!-- ticket-texts-top block ends -->
+
+
+                <!-- ticket-texts-bottom block starts -->
+                <div class="ticket-texts-bottom">
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="far fa-circle dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Low</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Open</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">-- / mark Rodgers</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <button class="button button-default">Shipping address</button>
+
+                </div>
+                <!-- ticket-texts-bottom block ends -->
+
+              </div>
+              <!-- ticket-texts block ends -->
+
+
+            </div>
+            <!-- ticket block ends -->
+
+            <!-- ticket block starts -->
+            <div class="ticket">
+
+              <!-- checkbox block starts -->
+              <div class="checkbox-wrap">
+                <input class="checkbox" id="checkbox-3" type="checkbox" value="">
+                <label for="checkbox-3"></label>
+              </div>
+              <!-- checkbox block ends -->
+
+              <div class="ticket__user-icon">
+                M
+              </div>
+
+              <!-- ticket-texts block starts -->
+              <div class="ticket-texts">
+
+                <!-- ticket-texts-top block starts -->
+                <div class="ticket-texts-top">
+
+                  <!-- ticket-texts-top-left block starts -->
+                  <div class="ticket-texts-top-left">
+                    <h2 class="ticket__text--size-big">
+                      <div class="ticket__text--color-light">#1035 - &nbsp;</div>
+                      <div class="ticket__text--color-dark"> PayPal Integration Problem</div>
+                    </h2>
+
+                    <div class="ticket__text--size-default">
+                      <ul class="ticket-info">
+                        <li><i class="far fa-envelope ticket-info__icon"></i> <span class="ticket-user">Marcus
+                            Stanley</span>
+                        </li>
+                        <li>Agent responded 4 hours ago</li>
+                        <li>Due in 16 hours</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- ticket-texts-top-left block ends -->
+
+                  <!-- ticket-texts-top-right block starts -->
+                  <div class="ticket-texts-top-right">
+                    <button class="button button-blue">Customer Responded</button>
+                    <button class="button button-red">Overdue</button>
+                  </div>
+                  <!-- ticket-texts-top-right block endss -->
+
+                </div>
+                <!-- ticket-texts-top block ends -->
+
+
+                <!-- ticket-texts-bottom block starts -->
+                <div class="ticket-texts-bottom">
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="far fa-circle dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Low</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Open</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">-- / mark Rodgers</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <button class="button button-default">Shipping address</button>
+
+                </div>
+                <!-- ticket-texts-bottom block ends -->
+
+              </div>
+              <!-- ticket-texts block ends -->
+
+
+            </div>
+            <!-- ticket block ends -->
+
+            <!-- ticket block starts -->
+            <div class="ticket">
+
+              <!-- checkbox block starts -->
+              <div class="checkbox-wrap">
+                <input class="checkbox" id="checkbox-4" type="checkbox" value="">
+                <label for="checkbox-4"></label>
+              </div>
+              <!-- checkbox block ends -->
+
+              <div class="ticket__user-icon">
+                M
+              </div>
+
+              <!-- ticket-texts block starts -->
+              <div class="ticket-texts">
+
+                <!-- ticket-texts-top block starts -->
+                <div class="ticket-texts-top">
+
+                  <!-- ticket-texts-top-left block starts -->
+                  <div class="ticket-texts-top-left">
+                    <h2 class="ticket__text--size-big">
+                      <div class="ticket__text--color-light">#1035 - &nbsp;</div>
+                      <div class="ticket__text--color-dark"> PayPal Integration Problem</div>
+                    </h2>
+
+                    <div class="ticket__text--size-default">
+                      <ul class="ticket-info">
+                        <li><i class="far fa-envelope ticket-info__icon"></i> <span class="ticket-user">Marcus
+                            Stanley</span>
+                        </li>
+                        <li>Agent responded 4 hours ago</li>
+                        <li>Due in 16 hours</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- ticket-texts-top-left block ends -->
+
+                  <!-- ticket-texts-top-right block starts -->
+                  <div class="ticket-texts-top-right">
+                    <button class="button button-red">Overdue</button>
+                  </div>
+                  <!-- ticket-texts-top-right block endss -->
+
+                </div>
+                <!-- ticket-texts-top block ends -->
+
+
+                <!-- ticket-texts-bottom block starts -->
+                <div class="ticket-texts-bottom">
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="far fa-circle dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Low</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Open</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">-- / mark Rodgers</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <button class="button button-default">Shipping address</button>
+
+                </div>
+                <!-- ticket-texts-bottom block ends -->
+
+              </div>
+              <!-- ticket-texts block ends -->
+
+
+            </div>
+            <!-- ticket block ends -->
+
+            <!-- ticket block starts -->
+            <div class="ticket">
+
+              <!-- checkbox block starts -->
+              <div class="checkbox-wrap">
+                <input class="checkbox" id="checkbox-6" type="checkbox" value="">
+                <label for="checkbox-6"></label>
+              </div>
+              <!-- checkbox block ends -->
+
+              <div class="ticket__user-icon">
+                M
+              </div>
+
+              <!-- ticket-texts block starts -->
+              <div class="ticket-texts">
+
+                <!-- ticket-texts-top block starts -->
+                <div class="ticket-texts-top">
+
+                  <!-- ticket-texts-top-left block starts -->
+                  <div class="ticket-texts-top-left">
+                    <h2 class="ticket__text--size-big">
+                      <div class="ticket__text--color-light">#1035 - &nbsp;</div>
+                      <div class="ticket__text--color-dark"> PayPal Integration Problem</div>
+                    </h2>
+
+                    <div class="ticket__text--size-default">
+                      <ul class="ticket-info">
+                        <li><i class="far fa-envelope ticket-info__icon"></i> <span class="ticket-user">Marcus
+                            Stanley</span>
+                        </li>
+                        <li>Agent responded 4 hours ago</li>
+                        <li>Due in 16 hours</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- ticket-texts-top-left block ends -->
+
+                  <!-- ticket-texts-top-right block starts -->
+                  <div class="ticket-texts-top-right">
+                    <button class="button button-red">Overdue</button>
+                  </div>
+                  <!-- ticket-texts-top-right block endss -->
+
+                </div>
+                <!-- ticket-texts-top block ends -->
+
+                <!-- ticket-texts-bottom block starts -->
+                <div class="ticket-texts-bottom">
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="far fa-circle dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Low</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">Open</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <!-- dropdow block starts -->
+                  <div class="dropdown  dropdown--type-dark">
+                    <div class="dropdown__view">
+                      <i class="fas fa-leaf dropdown__icon"></i>
+                      <span class="dropdown__text-selected">-- / mark Rodgers</span>
+                      <i class="fas fa-chevron-down dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__items">
+                      <li class="dropdown__item">Medium</li>
+                    </ul>
+                  </div>
+                  <!-- dropdow block ends -->
+
+                  <button class="button button-default">Shipping address</button>
+
+                </div>
+                <!-- ticket-texts-bottom block ends -->
+
+              </div>
+              <!-- ticket-texts block ends -->
+            </div>
+            <!-- ticket block ends -->
+
+          </div>
+
+          <!-- tickets-filter block starts -->
+          <div class="filters">
+            <h2 class="filters__head">
+              <i class="fas fa-filter filters__head-icon"></i>
+              <span class="filters__head-text">Filters</span>
+            </h2>
+
+            <form action="" class="filters__form">
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Agents</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Groups</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Created</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Due by</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Status</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Priority</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Type</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Source</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Tags</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Companies</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+              <div class="filters__field">
+                <label for="" class="filters__field-label">Contacts</label>
+                <select name="" id="" class="filters__field-select">
+                  <option value="">Any</option>
+                </select>
+              </div>
+
+            </form>
+          </div>
+          <!-- tickets-filter block starts -->
+
+        </div>
+        <!-- tickets list wrapper block ends -->
+
+      </div>
+      <!-- tickets section ends -->
+
+    </div>
+    <!-- content ends -->
+
+  </section>
+  <!-- main section ends -->
+
+</body>

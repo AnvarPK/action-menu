@@ -1,0 +1,19 @@
+// header strats
+header {
+    display: flex;
+    .logo-wrap {
+        width: 100%;
+        max-width: 200px;
+        display: block;
+    }
+}
+// header ends
+
+//main
+.main {
+    flex-grow: 1;
+    display: flex;
+    .content {
+        width: 100%;
+    }
+}

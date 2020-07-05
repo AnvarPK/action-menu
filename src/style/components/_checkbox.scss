@@ -1,0 +1,41 @@
+.checkbox-wrap {
+    margin-right: 10px;
+    .checkbox {
+        position: absolute; // take it out of document flow
+        opacity: 0; // hide it
+
+        & + label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        // Box.
+        & + label:before {
+            content: "";
+            display: inline-block;
+            vertical-align: text-top;
+            width: 18px;
+            height: 18px;
+            border: 1.5px solid rgba($color-black, 0.4);
+            border-radius: 5px;
+        }
+
+        // Checkmark. Could be replaced with an image
+        &:checked + label:before {
+            border: 1.5px solid rgba($color-blue, 1);
+        }
+        &:checked + label:after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 10px;
+            background: rgba($color-blue, 1);
+            width: 2px;
+            height: 2px;
+            box-shadow: 2px 0 0 rgba($color-blue, 1), 4px 0 0 rgba($color-blue, 1), 4px -2px 0 rgba($color-blue, 1),
+                4px -4px 0 rgba($color-blue, 1), 4px -6px 0 rgba($color-blue, 1), 4px -8px 0 rgba($color-blue, 1);
+            transform: rotate(45deg);
+        }
+    }
+}

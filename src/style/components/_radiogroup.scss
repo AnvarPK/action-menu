@@ -1,0 +1,51 @@
+.radio-group {
+    margin: 5px;
+    display: flex;
+    border: 0.5px solid rgba($color-black, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    input[type="radio"] {
+        opacity: 0;
+        position: fixed;
+        width: 0;
+    }
+    label {
+        display: inline-block;
+        background-color: #ffffff;
+        padding: 10px;
+        font-size: 14px;
+        border: 0;
+        cursor: pointer;
+        position: relative;
+        &:after {
+            content: "";
+            height: 54%;
+            width: 1px;
+            position: absolute;
+
+            background: rgba($color-black, 0.2);
+        }
+        &:after {
+            right: 0;
+        }
+        &:last-of-type {
+            &:after {
+                width: 0;
+            }
+        }
+    }
+
+    label:hover,
+    input[type="radio"]:checked + label {
+        color: $color-blue;
+    }
+
+    .radio {
+        display: flex;
+        align-items: center;
+
+        &__icon {
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: rgba($color-blue, 0.1);
+    color: $color-black;
+    font-family: $primary-font;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+* {
+    transition: all 0.1s ease-in-out;
+    box-sizing: border-box;
+}
+
+.seperator {
+    height: 30px;
+    width: 1px;
+    background-color: rgba(77, 79, 95, 0.1);
+    display: flex;
+    margin: 0 5px;
+}

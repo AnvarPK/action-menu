@@ -1,0 +1,86 @@
+.tickets-list {
+    padding: 12px 10px;
+    flex-grow: 1;
+}
+.ticket {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 18px;
+    box-shadow: 0 3px 9px -3px rgba($color-black, 0.3);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    &__user-icon {
+        font-size: 18px;
+        height: 60px;
+        width: 60px;
+        display: block;
+        background: rgb(47, 214, 187);
+        background: linear-gradient(360deg, rgba(47, 214, 187, 0.5) 0%, rgba(219, 244, 115, 0.5) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        margin: 0 5px;
+    }
+    &-texts {
+        flex-grow: 1;
+        margin-left: 10px;
+        h2 {
+            display: flex;
+            margin: 0 0 7px;
+        }
+        &-top {
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba($color-black, 0.4);
+            display: flex;
+            justify-content: space-between;
+            &-right {
+                .button {
+                    margin-left: 8px;
+                }
+            }
+        }
+        &-bottom {
+            display: flex;
+            align-items: center;
+            padding: 15px 0 0;
+            .dropdown {
+                margin-right: 30px;
+            }
+        }
+    }
+    &__text {
+        //text size
+        &--size {
+            //text size = big
+            &-big {
+                font-size: 1.17em;
+                font-weight: 400;
+                letter-spacing: 0.3px;
+            }
+            &-default {
+                font-size: 0.9em;
+            }
+        }
+        &--color-dark {
+            color: rgba(#000, 0.6);
+        }
+    }
+    &-info {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        &__icon {
+            margin-right: 5px;
+        }
+
+        li {
+            margin-left: 25px;
+            &:first-child {
+                list-style: none;
+                margin-left: 0;
+            }
+        }
+    }
+}
